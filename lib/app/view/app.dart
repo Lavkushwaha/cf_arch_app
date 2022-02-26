@@ -1,4 +1,4 @@
-import 'package:cf_reseller_app/app_config/app_config.dart';
+import 'package:cf_reseller_app/config/app_config.dart';
 import 'package:cf_reseller_app/l10n/l10n.dart';
 import 'package:cf_reseller_app/routes/routes.dart';
 import 'package:flutter/material.dart';
