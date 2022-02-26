@@ -1,9 +1,6 @@
 name: cf_reseller_app
 
 on: [pull_request, push]
-
-name: Flutter Package Workflow
-
 jobs:
   build:
     defaults:
@@ -42,4 +39,5 @@ jobs:
         uses: VeryGoodOpenSource/very_good_coverage@v1
         with:
           path: ${{inputs.working_directory}}/coverage/lcov.info
+          min_coverage: 95
           exclude: ${{inputs.coverage_excludes}}
