@@ -8,3 +8,5 @@ jobs:
     with:
       flutter_channel: stable
       flutter_version: 2.10.0
+      path: "./coverage/lcov.info"
+      min_coverage: 10
