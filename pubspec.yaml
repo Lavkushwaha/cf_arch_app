@@ -7,16 +7,15 @@ environment:
   sdk: ">=2.16.0 <3.0.0"
 
 dependencies:
-  bloc: ^8.0.2
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.0.1
+ 
   flutter_localizations:
     sdk: flutter
   intl: ^0.17.0
+  rxdart: ^0.27.3
 
 dev_dependencies:
-  bloc_test: ^9.0.2
   flutter_test:
     sdk: flutter
   mocktail: ^0.2.0
