@@ -8,5 +8,10 @@ jobs:
     with:
       flutter_channel: stable
       flutter_version: 2.10.0
+    
+    uses: VGVentures/very-good-coverage@v1.1.1
+    with:
       path: "./coverage/lcov.info"
-      min_coverage: 10
+      min_coverage: 20
+      exclude: "**/*_observer.dart **/change.dart"
+
