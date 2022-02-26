@@ -1,12 +1,6 @@
-// Copyright (c) 2021, Very Good Ventures
-// https://verygood.ventures
-//
-// Use of this source code is governed by an MIT-style
-// license that can be found in the LICENSE file or at
-// https://opensource.org/licenses/MIT.
-
-import 'package:cf_reseller_app/counter/counter.dart';
+import 'package:cf_reseller_app/app_config/app_config.dart';
 import 'package:cf_reseller_app/l10n/l10n.dart';
+import 'package:cf_reseller_app/routes/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -26,8 +20,11 @@ class App extends StatelessWidget {
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
       ],
+      title: appConfig.appName ?? 'CF ARCH APP',
+      debugShowCheckedModeBanner: appConfig.showDebugBanner,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
+      onGenerateRoute: Routes.getGeneratedRoute,
+      initialRoute: Routes.splash,
     );
   }
 }
